@@ -1,0 +1,57 @@
+@import "/home/stelle/.config/waybar/themes/default/colors.css";
+
+* {
+  font-family: JetBrainsMono Nerd Font Propo;
+  font-size: 18px;
+}
+
+window#waybar {
+    background-color: @bg-dark;
+}
+
+#custom-arch {
+    color: @green;
+    margin: 2px 6px 2px 2px;
+    padding: 2px;
+}
+#workspaces button {
+    padding: 2px;
+    margin: 2px 0px 2px 2px;
+    background: transparent;
+    border-radius: 2px;
+    color: white;
+}
+
+#workspaces button.active {
+    background: linear-gradient(45deg, @magenta, @cyan);
+    transition: all 0.3s ease-in-out 0.1s;
+    border-radius: 6px;
+    color: @bg-highlight;
+}
+
+#workspaces button.urgent {
+    background: @red;
+}
+
+#clock {
+    font-weight: 600;
+    background: @bg-hightlight;
+}
+
+#tray,
+#memory,
+#bluetooth,
+#network,
+#custom-power,
+#pulseaudio,
+#battery {
+    border-radius: 6px;
+    padding: 2px 6px;
+    margin: 4px 6px 4px 0px;
+    background-color: @bg-highlight;
+    font-weight: 700;
+}
+
+#custom-power {
+    color: @red;
+}
